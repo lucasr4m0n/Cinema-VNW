@@ -43,6 +43,12 @@ Como este é um projeto puramente estático, basta **abrir o arquivo `index.html
 
 ---
 
+### 🌐 Demo Online
+
+Você pode visualizar o projeto em funcionamento aqui: [https://lucasr4m0n.github.io/Cinema-VNW/](https://lucasr4m0n.github.io/Cinema-VNW/)
+
+---
+
 ### ✒️ Autoria
 
 Feito por:
@@ -51,14 +57,6 @@ Feito por:
     * **Meu Linkedin:** [https://www.linkedin.com/in/lucas-ramon20](https://www.linkedin.com/in/lucas-ramon20)
 
 ---
-
-
-### 📄 Licença
-
-Este projeto está sob a licença [MIT License](https://github.com/lucasr4m0n/Cinema-VNW/blob/main/LICENSE).
-
----
-
 
 
 #### 🤝 Agradecimentos
