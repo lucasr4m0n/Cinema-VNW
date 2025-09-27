@@ -53,9 +53,19 @@ Feito por:
 ---
 
 
+### 📄 Licença
+
+Este projeto está sob a licença [MIT License](https://github.com/lucasr4m0n/Cinema-VNW/blob/main/LICENSE).
+
+---
+
+
+
 #### 🤝 Agradecimentos
 
 Gostaria de expressar minha gratidão a:
 
 * **Curso Bit - Vai na Web** pelo aprendizado e por me fornecer as ferramentas para construir este projeto.
 * Aos tutoriais e recursos online que ajudaram a moldar este projeto.
+
+---
