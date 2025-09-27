@@ -9,6 +9,8 @@
 
 Inspirado nas gigantes do streaming como a Netflix, este projeto recria a experiência de uma tela de cinema diretamente no seu navegador. Com uma interface minimalista e focada, ele convida o usuário a mergulhar na imersão de um filme.
 
+![Pré-visualização do Projeto](cinema-vnw.png)
+
 ---
 
 ### 💻 Tecnologias Utilizadas
