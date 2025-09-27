@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #141414;
+  color: #f5f5f5;
+}
+
+.navbar {
+  background-color: #141414;
+  padding: 15px 40px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo {
+  color: #e50914;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0;
+  font-weight: 700;
+  text-shadow: 0 0 5px rgba(229, 9, 20, 0.5), 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.nav-links a {
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.nav-links a:hover {
+  color: #e50914;
+}
+
+.nav-search {
+  background-color: rgb(32.75, 32.75, 32.75);
+  border: 1px solid #474747;
+  color: #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+.nav-search:focus {
+  border-color: #e50914;
+  outline: none;
+}
+
+.movie-card-tittle {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #f5f5f5;
+  margin-top: 10px;
+}
+
+.movie-rating {
+  font-size: 0.9rem;
+  color: #aaaaaa;
+  margin-bottom: 5px;
+}
+
+.btn-base, .btn-buy {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie-card {
+  background-color: transparent;
+  width: 250px;
+  padding: 0;
+  border-radius: 4px;
+  box-shadow: none;
+  transition: all 0.2s ease-in-out;
+}
+.movie-card .poster-image {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  display: block;
+  box-shadow: none;
+}
+.movie-card:hover {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(229, 9, 20, 0.9);
+  cursor: pointer;
+}
+
+.btn-buy {
+  background-color: #e50914;
+  color: #f5f5f5;
+}
+.btn-buy:hover {
+  background-color: rgb(179.9285714286, 7.0714285714, 15.7142857143);
+  box-shadow: none;
+}
+
+.movie-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  padding: 30px 10px;
+}
+
+footer {
+  background-color: rgb(32.75, 32.75, 32.75);
+  padding: 25px 0;
+  text-align: center;
+  color: #888888;
+  font-size: 0.9rem;
+  margin-top: 50px;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */

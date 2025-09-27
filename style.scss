@@ -1,0 +1,189 @@
+// =================================================================
+// 1. BASE & RESET
+// Definições globais de layout e tipografia.
+// =================================================================
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// =================================================================
+// 2. ABSTRACTS/VARIABLES
+// Tema de Cores e Fontes (Estilo Netflix).
+// =================================================================
+
+$color-bg-dark: #141414; // Fundo principal
+$color-text-light: #f5f5f5; // Texto
+$color-highlight: #e50914; // Vermelho de destaque (Netflix Red)
+$font-family-title: 'Oswald', sans-serif;
+$font-family-base: 'Roboto', sans-serif;
+
+* {
+    font-family: $font-family-base;
+}
+
+body {
+    background-color: $color-bg-dark;
+    color: $color-text-light;
+}
+
+
+// =================================================================
+// 3. HEADER (NAVBAR)
+// Configuração da barra de navegação principal.
+// =================================================================
+
+.navbar { 
+    background-color: $color-bg-dark;
+    padding: 15px 40px; 
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+// Estilo do Título (Logo)
+.titulo {
+    color: $color-highlight; 
+    font-family: $font-family-title; 
+    font-size: 1.9rem; 
+    text-transform: uppercase; 
+    letter-spacing: 3px; 
+    margin: 0; 
+    font-weight: 700;
+    
+    // Efeito de sombra para destaque
+    text-shadow: 0 0 5px rgba($color-highlight, 0.5),
+                 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+// Estilo dos Links de Navegação
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+
+    a {
+        color: $color-text-light;
+        text-decoration: none;
+        font-size: 1rem;
+
+        &:hover {
+            color: $color-highlight; 
+        }
+    }
+}
+
+// Estilo para o Campo de Busca
+.nav-search {
+    background-color: lighten($color-bg-dark, 5%);
+    border: 1px solid lighten($color-bg-dark, 20%);
+    color: $color-text-light;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    
+    &:focus {
+        border-color: $color-highlight;
+        outline: none; 
+    }
+}
+
+// =================================================================
+// 4. COMPONENTS (Cards e Botões)
+// Estilos visuais dos cards de filme e botões de ação.
+// =================================================================
+
+.movie-card-tittle { 
+    font-family: $font-family-base;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: $color-text-light;
+    margin-top: 10px;
+}
+
+.movie-rating { 
+    font-size: 0.9rem;
+    color: #aaaaaa;
+    margin-bottom: 5px;
+}
+
+// Base para Botões
+.btn-base {
+    padding: 8px 15px; 
+    border: none;
+    border-radius: 2px; 
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.movie-card { 
+    background-color: transparent; 
+    width: 250px; 
+    padding: 0; 
+    border-radius: 4px; 
+    
+    box-shadow: none; 
+    transition: all 0.2s ease-in-out; 
+    
+    .poster-image { 
+        width: 100%; 
+        height: auto;
+        border-radius: 4px; 
+        display: block; 
+        box-shadow: none; 
+    }
+
+    // Efeito de Escala e Glow no hover
+    &:hover {
+        transform: scale(1.05);
+        z-index: 10;
+        box-shadow: 0 0 20px rgba($color-highlight, 0.9); // Glow vermelho
+        cursor: pointer;
+    }
+}
+
+// Estilos do Botão de Compra
+.btn-buy { 
+    @extend .btn-base; 
+    background-color: $color-highlight; 
+    color: $color-text-light;
+    
+    &:hover {
+        background-color: darken($color-highlight, 10%);
+        box-shadow: none; 
+    }
+}
+
+// =================================================================
+// 5. LAYOUT (Estrutura da Página)
+// =================================================================
+
+.movie-list { 
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 40px; 
+    padding: 30px 10px; 
+}
+
+// =================================================================
+// 6. FOOTER (Rodapé)
+// =================================================================
+
+footer {
+    background-color: lighten($color-bg-dark, 5%); 
+    padding: 25px 0; 
+    text-align: center;
+    
+    color: #888888; 
+    font-size: 0.9rem;
+    
+    margin-top: 50px; 
+    width: 100%;
+}
